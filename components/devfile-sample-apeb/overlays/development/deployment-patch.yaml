@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-apeb
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-776-0098-tenant/ci10t-776-0098-app/devfile-sample-apeb@sha256:ad3287f67b4a7beab5d930a1d8686d09f64db5cee453bf4f2269c2ca4e83e503
+        name: my-nodejs
+        resources: {}
+status: {}
